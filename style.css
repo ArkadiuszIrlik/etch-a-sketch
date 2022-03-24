@@ -1,15 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,600;1,600&family=Tangerine:wght@700&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #board {
   height: 40vw;
   width: 40vw;
-  border: 2px solid black;
-  margin: 0 auto;
+  border: 3px solid black;
   display: flex;
   flex-wrap: wrap;
+  flex-shrink: 0;
 }
 
 .board-square {
   background-color: #c2bcad;
   display: flex;
   flex: 1 1;
-  outline: 1px solid black;
+  outline: 1px solid #a19c8f;
+}
+
+#frame {
+  height: 60vw;
+  width: 60vw;
+  background-color: #950607;
+  margin: 5vh auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 1%;
+}
+
+#nameplate {
+  height: 14%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2vw;
+}
+
+#name-center {
+  color: #FFD700;
+  font-family: Tangerine, cursive;
+  font-size: 6vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#name-left,
+#name-right {
+  color: #FFD700;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-style: italic;
+  font-size: 2vh;
+}
+
+#name-left {
+  margin-top: 12%;
+}
+
+#name-right {
+  margin-top: 8%;
+}
+#controls {
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+}
+.knob {
+  background-color: #e2d7d7;
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5), inset 0px 2px 8px #333;
+}
+
+#clear-button {
+  align-self: center;
+  background-color: #e2d7d7;
+  height: 30%;
+  width: 30%;
+  border: 2px solid #FFD700;
+  border-radius: 22px;
+  box-shadow: inset 0px 2px 8px #333,0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 2vh;
+  text-shadow: 1px 2px 3px rgba(0,0,0,0.3);  
 }

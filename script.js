@@ -10,3 +10,5 @@ function fillBoard(board, boardSideLength) {
   }
   return board;
 }
+
+fillBoard(board, boardSideLength);
