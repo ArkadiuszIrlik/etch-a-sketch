@@ -5,5 +5,11 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-start;
+}
+
+.board-square {
+  background-color: #c2bcad;
+  display: flex;
+  flex: 1 1;
+  outline: 1px solid black;
 }
