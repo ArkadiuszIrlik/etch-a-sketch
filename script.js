@@ -3,6 +3,11 @@ const controls = document.getElementById('controls');
 const frame = document.getElementById('frame');
 let boardSideLength = 16;
 
+//Returns a random integer between the two specified, both included
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+
 function fillBoard(board, boardSideLength) {
   for (let i = 0; i < (boardSideLength**2); i++) {
     const currentSquare = document.createElement('div');
@@ -16,7 +21,8 @@ function fillBoard(board, boardSideLength) {
 
 function colorSquare() {
   if (primaryMouseButtonDown) {
-    return this.classList.add('colored');
+    return this.style.backgroundColor = `rgb(${getRndInteger(0, 255)}` +
+      `, ${getRndInteger(0, 255)}, ${getRndInteger(0, 255)})`;
   }
 }
 
